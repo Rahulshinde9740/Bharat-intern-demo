@@ -3,157 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Website Clone</title>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="singin.html">
+    <script src="https://kit.fontawesome.com/f21d2355c8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <img src="images/logo.png" class="logo">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#srvices">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Developer</p>
+                <h1>Hi, I'm <span>Kevi</span><br>Jen from Australia</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                    <div class="about-col-2"></div>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Odio iste cumque necessitatibus placeat nemo? Unde esse fugit voluptatibus tenetur?
+                       Nisi hic deserunt unde officia totam, nostrum illo veritatis minima. Doloribus?.</p>
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p> 
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java Developer</span><br>Developing the software</li>
+                            <li><span>Back-end Developer</span><br>Software Development</li>
+                            <li><span>App Developer</span><br>Building Android/ios apps</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents"  id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Java Developer Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>Java Developer Executiveat Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>Java Developer Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA fromMIT Bangalore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                                  
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Sevices</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolores odit error praesentium magnam, odio atque porro sit sed 
+                        ratione sequi ex laborum dignissimos deleniti molestiae optio,
+                        voluptatibus corrupti incidunt dolorum.</p>
+                        <a href="#">Learn more</a>
+                    </div>
             <div>
-                <button class="language-btn">English<img src="images/down-icon.png"></button>
-                <button>Sign-In</button>
+                <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolores odit error praesentium magnam, odio atque porro sit sed 
+                        ratione sequi ex laborum dignissimos deleniti molestiae optio,
+                        voluptatibus corrupti incidunt dolorum.</p>
+                        <a href="#">Learn more</a>
+               </div>
+            <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dolores odit error praesentium magnam, odio atque porro sit sed 
+                        ratione sequi ex laborum dignissimos deleniti molestiae optio,
+                        voluptatibus corrupti incidunt dolorum.</p>
+                        <a href="#">Learn more</a>
+                         </div>
+                  </div>
+         <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fugiat, consectetur vel harum exercitationem reiciendis aut. Sint veritatis placeat itaque modi soluta, quisquam voluptatum amet, corporis facilis et, voluptatem ut.</p>
+                            <a href="#"></a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fugiat, consectetur vel harum exercitationem reiciendis aut. Sint veritatis placeat itaque modi soluta, quisquam voluptatum amet, corporis facilis et, voluptatem ut.</p>
+                            <a href="#"></a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fugiat, consectetur vel harum exercitationem reiciendis aut. Sint veritatis placeat itaque modi soluta, quisquam voluptatum amet, corporis facilis et, voluptatem ut.</p>
+                            <a href="#"></a>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
             </div>
-        </nav>
-        <div class="header-content">
-            <h1>Unlimited movies, TV shows and more</h1>
-            <h3>Watch anywhere. Cancel anytime.</h3>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form  class="email-signup">
-                <input type="email" placeholder="email adress" required>
-                <button type="submit">Get Started</button>
-            </form>
-        </div>
-    </div>
+         </div>
+         <div id="contact">
+            <div class="container">
+                <div id="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-address-book"></i>contactexample.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href="https:/facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https:/fa-twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https:/fa-instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https:/fa-linkedin"><i class="fa-brands fa-linkedin"></i></a> 
+                        </div>
+                        <a href="images/CV.pdf"  download class="btn btn2">Download CV</a>
+                    </div>
 
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Mesage"  rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit"  class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright ot kevin. <i class="fa-solid fa-heart"></i>Made with by easy code.</p>
+            </div>
 
-    <div class="features">
-        <div class="row">
-          <div class="text-col">
-            <h2>Enjoy on your TV</h2>
-            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-        </div>
-        <div class="img-col">
-            <img src="images/feature-1.png">
-        </div>
-    </div>
-    <div class="row">
-        <div class="text-col">
-          <h2>Download your shows to watch offline</h2>
-          <p>Save your favourites easily and always have something to watch.</p>
-      </div>
-      <div class="img-col">
-          <img src="images/feature-2.png">
-      </div>
-  </div>
-  <div class="row">
-    <div class="text-col">
-      <h2>Watch everywhere</h2>
-      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-  </div>
-  <div class="img-col">
-      <img src="images/feature-3.png">
-  </div>
-</div>
-<div class="row">
-    <div class="text-col">
-      <h2>Create profiles for kids</h2>
-      <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
-  </div>
-  <div class="img-col">
-      <img src="images/feature-4.png">
-  </div>
-</div>
-</div>
-<div class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <ul class="accordion">
-        <li>
-            <input type="radio" name="accordion" id="first">
-            <label for="first">What is NetFlix?</label>
-            <div class="content">
-                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
-            </div>
-        </li>
-        <li>
-            <input type="radio" name="accordion" id="second">
-            <label for="second">How much does Netflix cost?</label>
-            <div class="content">
-                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
-            </div>
-        </li>
-        <li>
-            <input type="radio" name="accordion" id="third">
-            <label for="third">Where I can watch? </label>
-            <div class="content">
-                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
-            </div>
-        </li>
-        <li>
-            <input type="radio" name="accordion" id="fourth">
-            <label for="fourth">How do I cancel?</label>
-            <div class="content">
-                <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
-            </div>
-        </li>
-        <li>
-            <input type="radio" name="accordion" id="fifth">
-            <label for="fifth">What can  I watch on NetFlix?</label>
-            <div class="content">
-                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
-            </div>
-        </li>
-        <li>
-            <input type="radio" name="accordion" id="sixth">
-            <label for="sixth">What is NetFlix?</label>
-            <div class="content">
-                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
-            </div>
-        </li>
-    </ul>
-    <small>Ready to watch? Enter your email to create or restart your membership.</small>
-    <form class="email-signup">
-        <input type="email" placeholder="Email address" required>
-        <button type="submit">Get Started</button>
-    </form>
-</div>
-<div class="footer">
-    <h2>Questions? Call 000-800-919-1694</h2>
-    <div class="row">
-        <div class="col">
-            <a href="#">FAQ</a>
-            <a href="#">Investor Relations</a>
-            <a href="#">Privacy</a>
-            <a href="#">Speed Test</a>
-        </div>
-        
-        <div class="col">
-            <a href="#">Help Centre</a>
-            <a href="#">Jobs</a>
-            <a href="#">Cookie Preferences</a>
-            <a href="#"> Legal Notices</a>
-        </div>
-        <div class="col">
-            <a href="#">Account</a>
-            <a href="#">Ways to Watch</a>
-            <a href="#">Corporate Information</a>
-            <a href="#">Only on Netflix</a>
-        </div>
-        <div class="col">
-            <a href="#">Media Centre</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <div>
-            <button class="language-btn">English <img src="images/down-icon.png"></button>
-            <p class="copyright-txt">Netflix India</p>
-        </div>
+         </div>
 
-    </div>
-</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
 
+        }
+    
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 
     
 </body>
-</html>
+</htm>
